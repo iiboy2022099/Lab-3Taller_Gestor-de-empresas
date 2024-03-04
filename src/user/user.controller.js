@@ -1,6 +1,3 @@
-
-'use strict';
-
 import { response, request } from "express";
 import bcryptjs from 'bcryptjs';
 import User from './user.model.js';
@@ -44,8 +41,7 @@ export const updateUser = async (req, res = response) => {
 
 export const userPost = async (req, res) => {
     const { nombre, correo, password } = req.body;
-    const user = new User({ nombre, correo, password, role: "ADMIN_ROLE" });
-    user.role = 'ADMIN_ROLE';
+    const user = new User({ nombre, correo, password });
     const salt = bcryptjs.genSaltSync();
     user.password = bcryptjs.hashSync(password, salt);
     await user.save();
