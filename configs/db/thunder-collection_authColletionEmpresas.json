@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "authColletionEmpresas",
+    "dateExported": "2024-03-04T03:01:13.836Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9fe177e1-7ab7-4e18-8b33-0b60573246f2",
+            "colId": "a7cee0f4-19c1-4782-ba89-8a405cf9244b",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/gestorEmpresasSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T02:31:26.865Z",
+            "modified": "2024-03-04T02:32:23.661Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"jperez1978@kinal.edu.gt\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
